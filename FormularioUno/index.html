@@ -45,16 +45,22 @@
  	    <fieldset>
 	        <legend><span class="number">1</span>Informacion basica</legend>
 	        <label for="name">Nombre:</label>
-	        <input type="text" id="name" name="user_name">
+	        <input type="text" id="name" name="user_name" required/>
 	      
 	        <label for="mail">Email:</label>
-	        <input type="email" id="mail" name="user_email">
-	      	
+	        <input type="email" id="mail" name="user_email" required/>
+
+	        <label for="tel">Teléfono Linea:</label>
+	        <input type="tel" id="phone" name="user_phone" pattern="[0-8]{8}" required/>
+
+	        <label for="tel">Celular:</label>
+	        <input type="tel" id="phone" name="user_cel" pattern="[0-10]{10}" required/>
+
 	        <label for="password">Contraseña:</label>
-	        <input type="password" id="password" name="clave1" size=10>
+	        <input type="password" id="password" name="clave1" size="10" required/>
 
 	        <label for="password">Repita Contraseña:</label>
-	        <input type="password" id="password" name="clave2" size="10">
+	        <input type="password" id="password" name="clave2" size="10" required/>
 	        <br>
 	      	<input type="button" value="Comprobar si son iguales" onClick="comprobarClave()"> 
 	      	<br>
